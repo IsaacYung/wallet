@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Example.wallet.main" target="1.8" />
+      <module name="Example.wallet.test" target="1.8" />
+      <module name="wallet.main" target="1.8" />
+      <module name="wallet.test" target="1.8" />
+      <module name="wallet.wallet.main" target="12" />
+      <module name="wallet.wallet.test" target="12" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
