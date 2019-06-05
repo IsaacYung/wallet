@@ -1,1 +1,0 @@
-/Users/jair.junior/Desktop/wallet/build/classes/kotlin/main/HelloWorldKt$main$1.class:/Users/jair.junior/Desktop/wallet/build/classes/kotlin/main/HelloWorldKt$module$1$1.class:/Users/jair.junior/Desktop/wallet/build/classes/kotlin/main/HelloWorldKt$module$1.class:/Users/jair.junior/Desktop/wallet/build/classes/kotlin/main/HelloWorldKt.class
