@@ -13,6 +13,26 @@ import io.ktor.routing.routing
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 
+fun Application.wallet() {
+    routing {
+        route("/") {
+            get {
+                call.respond(mapOf("Hello" to "World!"))
+            }
+        }
+    }
+}
+
+fun Application.account() {
+    routing {
+        route("/") {
+            get {
+                call.respond(mapOf("Hello" to "World!"))
+            }
+        }
+    }
+}
+
 fun Application.module() {
     install(DefaultHeaders)
     install(CallLogging)
@@ -22,13 +42,8 @@ fun Application.module() {
         }
     }
 
-    routing {
-        route("/") {
-            get {
-                call.respond(mapOf("Hello" to "World!"))
-            }
-        }
-    }
+    wallet()
+    account()
 }
 
 fun main() {
