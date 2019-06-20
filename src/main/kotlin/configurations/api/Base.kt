@@ -9,8 +9,6 @@ import io.ktor.features.CallLogging
 import io.ktor.features.ContentNegotiation
 import io.ktor.features.DefaultHeaders
 import io.ktor.jackson.jackson
-import io.ktor.server.engine.embeddedServer
-import io.ktor.server.netty.Netty
 
 fun Application.module() {
     install(DefaultHeaders)
@@ -23,8 +21,4 @@ fun Application.module() {
 
     wallet()
     account()
-}
-
-fun main() {
-    embeddedServer(Netty, 8080, module = Application::module).start()
 }
