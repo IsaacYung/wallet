@@ -39,6 +39,20 @@ dependencies {
     compile "io.ktor:ktor-server-netty:$ktor_version"
     compile "org.slf4j:slf4j-simple:1.7.9"
     compile 'org.jetbrains.exposed:exposed:0.14.1'
+    compile group: 'io.ktor', name: 'ktor-jackson', version: '1.2.1'
     implementation "io.ktor:ktor-jackson:$ktor_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    baseName 'wallet'
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'WalletMainKt'
+
+        )
+    }
+
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
