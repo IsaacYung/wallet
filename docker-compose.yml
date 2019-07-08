@@ -8,12 +8,12 @@ services:
 
     ports:
     - "4000:8080"
-    links:
-    - mysql
-    - rabbitmq
-    - mongo
-    - zookeeper
-    - kafka
+#    links:
+#    - mysql
+#    - rabbitmq
+#    - mongo
+#    - zookeeper
+#    - kafka
 
   mysql:
     image: mysql:8.0.16
