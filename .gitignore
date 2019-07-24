@@ -12,6 +12,7 @@
 
 # Package Files #
 *.jar
+!newrelic.jar
 *.war
 *.nar
 *.ear
